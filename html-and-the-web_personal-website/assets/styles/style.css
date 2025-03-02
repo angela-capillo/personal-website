@@ -8,30 +8,59 @@
 
 body {
     font-size: 16px;
+    font-weight: 100;
     background-color: #FFFBFF;
     font-family: Overpass Mono;
-    margin: 2rem;
+    margin: 3rem;
 }
 
 header {
     margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 nav {
-    margin: 1rem;
-    display: inline;
-    vertical-align: top;
+    display: inline-block;
+}
+
+nav a {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+
 }
 
 section {
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+section#bio h2 {
+    text-align: left;
+}
+
+section#bio p {
+    display: inline-block;
+    max-width: 600px;
+    vertical-align: top;
+}
+
+section#bio figure {
+    display: inline-block;
+}
+
+section#contact {
+    text-align: center;
+}
+
+section#contact h2 {
+    margin-bottom: 4rem;
 }
 
 footer {
-    margin: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 /* Typography */
@@ -43,13 +72,15 @@ h1, h2 {
 
 h1 {
     font-size: 2.5rem;
-    display: inline;
+    display: inline-block;
+    vertical-align: middle;
 
 }
 
 h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 p {
@@ -59,29 +90,45 @@ p {
 
 }
 
-section#bio p {
-    display: inline-block;
-    max-width: 600px;
-    vertical-align: top;
-}
-
-nav a {
-    font-size: 1.5rem;
-
-}
-
 a {
     color: #181818;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Elements */
+/* Elements and containers*/
 
-section#bio figure {
+figure {
+    margin-left: 3rem;
+}
+
+.work {
+    text-align: center;
+}
+
+.work a {
     display: inline-block;
+    vertical-align: middle;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.contact {
+    display: inline-block;
+}
+
+.contact a {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    text-decoration: underline
+}
+
+.contact img {
+    width: 32px;
+    vertical-align: middle;
 }
