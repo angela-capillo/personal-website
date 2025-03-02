@@ -4,6 +4,84 @@
     box-sizing: border-box;
 }
 
+/* Layout */
+
 body {
+    font-size: 16px;
     background-color: #FFFBFF;
+    font-family: Overpass Mono;
+    margin: 2rem;
+}
+
+header {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+nav {
+    margin: 1rem;
+    display: inline;
+    vertical-align: top;
+}
+
+section {
+    margin: 1rem;
+}
+
+footer {
+    margin: 1rem;
+}
+
+/* Typography */
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2.5rem;
+    display: inline;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 100;
+
+}
+
+section#bio p {
+    display: inline-block;
+    max-width: 600px;
+    vertical-align: top;
+}
+
+nav a {
+    font-size: 1.5rem;
+
+}
+
+a {
+    color: #181818;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Elements */
+
+section#bio figure {
+    display: inline-block;
 }
