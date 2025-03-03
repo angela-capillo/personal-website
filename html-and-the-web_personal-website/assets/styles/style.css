@@ -44,7 +44,7 @@ section#bio h2 {
 }
 
 section#bio p {
-    max-width: 600px;
+    width: 100%;
 }
 
 section#bio img {
@@ -105,14 +105,21 @@ a:hover {
 
 /* Elements and containers*/
 
+figure {
+    width: 100%;
+}
+
 .flex-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 4rem;
 }
 
 .work {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
 }
 
 .work a {
