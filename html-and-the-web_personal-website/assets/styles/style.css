@@ -16,6 +16,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
@@ -43,13 +44,11 @@ section#bio h2 {
 }
 
 section#bio p {
-    display: inline-block;
     max-width: 600px;
-    vertical-align: top;
 }
 
-section#bio figure {
-    display: inline-block;
+section#bio img {
+    max-width: 100%; 
 }
 
 section#contact {
@@ -106,8 +105,10 @@ a:hover {
 
 /* Elements and containers*/
 
-figure {
-    margin-left: 3rem;
+.flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
 }
 
 .work {
